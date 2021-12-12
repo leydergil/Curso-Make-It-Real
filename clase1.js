@@ -11,6 +11,7 @@ console.log(num / num3); // División
 console.log(num % num3); // Modulo  (Sobrante, restante o residuo)
 console.log(++num); // Incremento
 console.log(--num2); // Decremento
+console.log(++num2);
 
 
 //Comprobando Tipos, Operador Typeof devuelve una cadena del tipo datos primitivo
@@ -63,3 +64,12 @@ let flot1 = "1.50"; // es un string de numeros flotantes
 console.log(parseFloat("1.00")); // Lo convierte a Float
 console.log(parseFloat(flot1)); // Lo convierte a Float
 console.log(parseFloat("ABC")); // No es un Número
+
+// Conversión de números en cadenas
+let num5 = 150;
+let flot2 = 1.50;
+
+console.log(num5.toString()); //Lo convierte en string
+console.log(flot2.toString()); 
+console.log((100).toString());
+typeof num5;
