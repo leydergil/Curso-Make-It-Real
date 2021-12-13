@@ -5,5 +5,6 @@ Inicio mi proceso de aprender a programarn en Java Script, espero poder avanzar 
 
 ### Arranco con conceptos básicos
 
-Aqui aprendere:
+#### Aqui aprendere:
+1. Que es Java Script
 
