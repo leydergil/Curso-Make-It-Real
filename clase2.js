@@ -91,3 +91,78 @@ if (myName === "Leyder"){
     console.log("The values NOT are the same");
 }
 
+// Combinando comparaciones
+// and (ambos lados deben ser verdaderos)
+// (x & y)
+// (x && y)
+// or (cualquier lado puede ser verdadero)
+// (x | y)
+// (x || y)
+
+/*
+Atajo para los operadores && and ||
+Detiene la evalaución si ya se conoce la respuesta
+(x && y) y no evaluado si x es false porque la respues es false
+(x || y) o no evaluado si x es true porque la respuesta es true
+*/
+
+//Ejemplo
+
+const userName = "jhon";
+const userAge = 25;
+
+if (userAge >= 18 || userName.length > 10){
+    console.log(`${userName} is an adult and his name is long`);
+}
+
+// Sentencias Switch (case)
+// Siempre se va a verificar la igualdad en cada caso
+const statuscode = 1400
+switch (statuscode){
+    case 200:
+        console.log("OK!");
+        break;
+    case 400:
+    case 500:
+        console.log("Error!");
+        break;
+    default:
+        console.log("Unknown value");
+        break;
+}
+
+// Comprobar si un número random es par, impar o cero
+// Usaremos If anidados
+
+const random = Math.floor(Math.random() * 10);
+console.log(random)
+
+if (random % 2 === 0 && random > 0){
+    console.log(`${random} is pair`);
+}else if (random % 2 !== 0 && random > 0){
+    console.log(`${random} is odd`);
+}else{
+    console.log(`${random} is not pair and odd`);
+}
+
+// Comprobar si un número random es par, impar o cero
+// Usaremos Switch (case)
+console.log(random);
+switch (random){
+    case 1:;
+    case 3:;
+    case 5:;
+    case 7:;
+    case 9:;
+     console.log("odd");
+     break;
+     case 2:;
+     case 4:;
+     case 6:;
+     case 8:;
+     case 10:;
+     console.log("pair");
+     break;
+     case 0:
+         console.log("is zero")
+}
