@@ -13,7 +13,7 @@ debe imprimir "No, el número x no es múltiplo de 5".
 let numeroEntero = 0;
 do{
   console.log("Ingrese un número o presione cero (0) para salir")
-  numeroEntero = parseFloat(prompt("Ingrese un número  : "));
+  numeroEntero = 0; //parseFloat(prompt("Ingrese un número  : "));
 
   if (numeroEntero === 0){
     console.log("El programa finalizo.");
@@ -25,8 +25,3 @@ do{
     console.log(`No, el número ${numeroEntero} no es múltiplo de 5.\n`);
   }
 }while (isNaN(numeroEntero) || numeroEntero != 0);
-
-let a = 2;
-let b = 4;
-
-console.log(a + b);
