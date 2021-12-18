@@ -41,9 +41,43 @@ for: hacer un bucle un número conocido de veces.
 for ... of: Iterando a través de una colección de elementos de una lista.
 */
 
-// Ejemplo While
-let cont = 1;
-while (cont <= 10){
-console.log(cont);
-cont++;
+// Ejemplo while
+let counter  = 1;
+while (counter <= 10){
+console.log(counter);
+counter++;
+}
+
+// Ejemplo for
+for (counter = 1; counter <= 5; counter++){
+    console.log(`Hola mundo ${counter}`)
+}
+
+
+// factorial de un numero
+// 5! = 5x4x3x2x1 = 120
+console.log(factorial(5))
+
+function factorial (n) {
+	var total = 1; 
+	for (i=1; i<=n; i++) {
+		total = total * i;
+        console.log(total) 
+	}
+	return total; 
+}
+
+
+// Teorema de Wilson
+// si (p-1)! + 1 es multiplo de p entonces p es primo
+
+let num = 10;
+num = num-1;
+
+console.log(factorial(num)+1);
+
+if ((factorial(num)+1) % (num +1) === 0){
+    console.log(`${num+1} : es primo`);
+}else{
+    console.log(`${num+1} : no es primo`)
 }
